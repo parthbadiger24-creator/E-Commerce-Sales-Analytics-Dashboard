@@ -10,7 +10,9 @@ How is revenue moving across **regions, product categories and time**, and where
 
 ## 🖼️ Dashboard Preview
 
-*Dashboard screenshots available in the repo — see `Dashboard 1 Image` and `Refined Dashboard 2 image`.*
+![Sales dashboard — refined view](img/dashboard-1.jpg)
+
+*Single-page refined executive view with KPI cards, category mix, regional split and trend line.*
 
 ## 🧩 What's Inside
 
@@ -20,18 +22,11 @@ How is revenue moving across **regions, product categories and time**, and where
 - **Time-series** trend of sales & orders
 - **Interactive filters:** date range, category, region
 
-### Two dashboard versions included:
-
-| Version | Description |
-|---|---|
-| **Dashboard 1** | Initial exploratory layout with comprehensive data views |
-| **Refined Dashboard 2** | Clean executive view — streamlined KPIs, clearer visual hierarchy, presentation-ready |
-
 ## 🧪 Methodology
 
 1. Cleaned and modelled raw transactional data into a star schema (`fact_sales` + `dim_date`, `dim_product`, `dim_geo`)
 2. Built calculated fields and LOD expressions for KPIs (`Total Revenue`, `AOV`, `YoY %`, `MoM %`)
-3. Iterated from an initial exploratory dashboard to a **refined executive version** with clearer visual hierarchy
+3. Built the layout iteratively — the current file is the **refined** version replacing an earlier cluttered draft
 4. Applied a consistent colour palette and conditional formatting for exec-friendly readability
 
 ## 🧰 Tech Stack
@@ -42,19 +37,20 @@ How is revenue moving across **regions, product categories and time**, and where
 
 ```text
 .
-├── Dashboard 1                  # Initial dashboard version (PDF / image export)
-├── Dashboard 1 Image            # Screenshot of Dashboard 1
-├── Refined Dashboard 2          # Cleaned-up executive dashboard
-├── Refined Dashboard 2 image    # Screenshot of refined version
-├── LICENSE
+├── dashboard/
+│   └── Dashboard_1.pdf         # exported PDF preview of the refined dashboard
+├── tableau/
+│   └── ecommerce_sales.twbx    # Tableau packaged workbook (source)
+├── img/
+│   └── dashboard-1.jpg
 └── README.md
 ```
 
-## ▶️ How to View
+## ▶️ How to view
 
-1. Preview the dashboard exports directly in the repo
-2. If you have the `.twbx` workbook, open in **Tableau Desktop** or **Tableau Public** (free)
-3. Dashboard images render inline on GitHub for quick preview
+1. Open `tableau/ecommerce_sales.twbx` in **Tableau Desktop** or **Tableau Public** (free)
+2. Or preview the exported PDF at `dashboard/Dashboard_1.pdf`
+3. Live version (if published): *add your Tableau Public URL here*
 
 ---
 
